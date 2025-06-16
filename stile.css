@@ -15,9 +15,17 @@ header {
   padding: 1rem 2rem;
   color: white;
   display: flex;
-  justify-content: space-between;
+ flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+}
+header h2{
+  padding-bottom: 20px;
+}
+header nav a{
+ padding-top: 10px 50px;
+   
+  
 }
 
 nav{
@@ -26,7 +34,7 @@ nav{
 
 nav a {
   color: rgba(255, 255, 255, 0.867);
-  margin: 0 10px;
+  margin: 0 100px;
   text-decoration: none;
   font-weight: 500;
 }
@@ -39,15 +47,16 @@ nav a:hover{
   padding: 3rem 2rem;
   text-align: center;
   background: #f5f5f5;
-  background-image: url('img/Banner-ecommerce-colecao-minimalista.png');
+  background-image: url('/img/Banner\ para\ E-commerce\ Nova\ coleção\ Minimalista.png');
 
  background-size: 100%;
  background-repeat: no-repeat;
+  box-shadow: 0 0px 10px 0.1px #333;
 }
 
 .banner h1 {
   font-size: clamp(0.1rem, 3vw, 3rem);
-  color: #ffffff;
+  color: #800040;
 }
 
 .banner p {

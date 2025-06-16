@@ -83,50 +83,76 @@ nav a:hover{
 }
 
 .produtos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-  
+  padding: 1rem;
+}
+
+.carrossel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carrossel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .produto {
-  background: #fff;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
   border: 1px solid #ddd;
   border-radius: 10px;
-  text-align: center;
   padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  background-color: #fff;
+  min-width: 200px;
+  max-width: 220px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
 }
-.produto a{
-  text-decoration: none;
-  border: 2px solid #333;
-  border-radius: 10px;
-  padding: 5px;
-  color:  #800040;
-  font-weight: bold;
-}
-.produto p{
-  margin-bottom: 10px;
-  
+
+.produto:hover {
+  transform: scale(1.03);
 }
 
 .produto img {
   width: 100%;
   max-width: 150px;
   height: auto;
-  margin-bottom: 1rem;
-}
-
-.produto h3 {
-  font-size: 1.1rem;
+  border-radius: 10px;
   margin-bottom: 0.5rem;
 }
 
-.produto p {
-  color: #800040;
-  font-weight: bold;
+.produto h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
 }
+
+.produto p {
+  font-weight: bold;
+  color: #800040;
+  margin-bottom: 0.5rem;
+}
+
+.produto a {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #800040;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #800040;
+  transition: background 0.2s;
+}
+
+.produto a:hover {
+  background-color: #800040;
+  color: white;
+}
+
 .rodape{
   background-color: #800040;
   color: #fff;
@@ -244,7 +270,7 @@ header h2{
 }
 header a{
   
-   font-size: clamp(0.1rem, 2vw, 3rem);
+   font-size: clamp(0.1rem, 2.5vw, 3rem);
 }
 nav { 
   display: flex;
@@ -307,48 +333,77 @@ nav a:hover{
   font-weight: 600;
 }
 
-.produtos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
+ .produtos {
+  padding: 1rem;
+}
+
+.carrossel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carrossel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .produto {
-  background: #fff;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
   border: 1px solid #ddd;
   border-radius: 10px;
-  text-align: center;
   padding: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+  min-width: 200px;
+  max-width: 220px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
 }
 
-.produto a {
-  text-decoration: none;
-  border: 2px solid #333;
-  border-radius: 10px;
-  padding: 5px;
-  color: #800040;
-  font-weight: bold;
+.produto:hover {
+  transform: scale(1.03);
 }
 
 .produto img {
   width: 100%;
   max-width: 150px;
   height: auto;
-  margin-bottom: 1rem;
-}
-
-.produto h3 {
-  font-size: 1.1rem;
+  border-radius: 10px;
   margin-bottom: 0.5rem;
 }
 
-.produto p {
-  color: #800040;
-  font-weight: bold;
-  margin-bottom: 10px;
+.produto h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
 }
+
+.produto p {
+  font-weight: bold;
+  color: #800040;
+  margin-bottom: 0.5rem;
+}
+
+.produto a {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #800040;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #800040;
+  transition: background 0.2s;
+}
+
+.produto a:hover {
+  background-color: #800040;
+  color: white;
+}
+
 
 .rodape {
   background-color: #800040;

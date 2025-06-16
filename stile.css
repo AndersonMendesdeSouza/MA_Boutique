@@ -94,21 +94,20 @@ nav a:hover{
 
 .produtos {
   padding: 1rem;
-}
 
-.carrossel {
+ 
+}
+ 
+ .carrossel {
   display: flex;
   gap: 1rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 1rem;
-  scrollbar-width: none; /* Firefox */
 }
 
-.carrossel::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
-}
+ 
 
 .produto {
   flex: 0 0 auto;

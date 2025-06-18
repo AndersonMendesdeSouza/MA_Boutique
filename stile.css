@@ -38,7 +38,16 @@ nav a {
   text-decoration: none;
   font-weight: 500;
 }
- 
+#categoria{
+  background: #800040;
+  
+   border: transparent;
+   color: rgb(255, 255, 255);
+ }
+ #categoria:hover{
+  color: #fff;
+  transform: scale(1.1);
+ }
 nav a:hover{
   transform: scale(1.1);
   color: #fff;

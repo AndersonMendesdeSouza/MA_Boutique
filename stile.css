@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   background: #fff;
   color: #333;
@@ -343,11 +345,14 @@ nav a:hover{
   transform: scale(1.1);
 }
  
+#categoria{
+  font-size:10px
+ }
 .banner {
   padding: 3rem 2rem;
   text-align: center;
   background: #f5f5f5;
-  background-image: url(/img/Banner\ para\ E-commerce\ Nova\ coleção\ Minimalista.png);
+  background-image: url( 'img/banner.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -451,7 +456,7 @@ nav a:hover{
   text-decoration: none;
   font-size: 0.9rem;
   color: #800040;
-  transition: background 0.2s;
+  transition:   0.2s;
 }
 
 .produto a:hover {

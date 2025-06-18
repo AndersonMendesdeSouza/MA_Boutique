@@ -8,6 +8,10 @@ categoria.addEventListener("change", function(){
 
 if (procurar) {
     procurar.scrollIntoView({ behavior: 'smooth' })};
+   
+    setTimeout(() => {
+        categoria.selectedIndex = 0
+    }, 2000);
 })
 
  
